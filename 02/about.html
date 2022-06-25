@@ -1,0 +1,51 @@
+<form methog="get" action="https://www.google.com/search" target="_blank"> 
+    <input type="text" name="q" value="form method" palceholder="enter text">
+    <!-- <input type="submit" value="search">    -->
+    <button type="submit">search</button>
+    <button type="button">simple button</button>
+    <button type="reset">clear</button>
+</form>
+<form method="post" action="#">
+    <fieldset>
+        <legend>presonal info</legend>
+        <label for="fname">first name</label>
+        <br>
+        <input type="text" name="fname" id="fname">
+    </fieldset>
+    
+    <fieldset>
+        <legend>frontend skills</legend>
+        <input type="checkbox" name="skill" value="html5" id="skill_html"> <label for="skill_html">html5</label> 
+        <br>
+        <input type="checkbox" name="skill" value="css3" id="skill_css"><label for="skill_css">css3</label> 
+        <br>
+        <input type="checkbox" name="skill" value="js" id="skill_js"> <label for="skill_js">javascript</label> 
+    </fieldset>
+   
+    <fieldset>
+        <legend>gender</legend>
+        <input type="radio" checked name="gender" value="man" id="gender_man"> <label for="gender_man">man</label> 
+        <br>
+        <input type="radio" name="gender" value="woman" id="gender_woman"> <label for="gender_woman">woman</label> 
+        <br>
+        <input type="radio" name="gender" value="other" id="gender_other"> <label for="gender_other">other</label> 
+    </fieldset>
+    <fieldset>
+        <legend>selects</legend>
+
+        <select name="drink[]" multiple size="10">
+            <optgroup label="non alcohol">
+                <option value="">Select drink</option>
+                <option>tea</option>
+                <option>coffe</option>
+            </optgroup>
+            <optgroup label="alcohol">
+                 <option>cola</option>
+                <option>ale</option>
+                 <option>beer</option>
+            </optgroup>
+        </select>
+    
+    </select>
+    </fieldset>
+</form>
