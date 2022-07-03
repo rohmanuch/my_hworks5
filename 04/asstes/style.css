@@ -83,10 +83,11 @@ input[type="checkbox"] {
     margin: 10px 16px 9px 13px;
 }
 
-ul span {
+small {
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
+        vertical-align: middle;
 }
 
 input:checked + label {
@@ -94,7 +95,15 @@ input:checked + label {
     font-size: 18px;
     line-height: 21px;
     color: #9B96AC;
-    text-decoration-line: line-through;
+}
+
+label::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #9B96AC;
+    display: block;
+    margin-top: -14px;
 }
 
 label:not(span) {
